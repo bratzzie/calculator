@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="320.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.stud.calc.MainWindowController">
+   <children>
+      <Pane layoutX="10.0" layoutY="36.0" prefHeight="500.0" prefWidth="300.0" styleClass="container" stylesheets="@styles.css">
+         <effect>
+            <DropShadow height="101.45" offsetX="3.0" radius="37.875" width="52.05">
+               <color>
+                  <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Pane layoutX="-10.0" layoutY="-37.0" prefHeight="33.0" prefWidth="320.0">
+               <children>
+                <Button layoutX="282.0" layoutY="7.0" mnemonicParsing="false" styleClass="mybutton" stylesheets="@styles.css" text="X" textFill="#484848">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="258.0" layoutY="7.0" mnemonicParsing="false" styleClass="mybutton" stylesheets="@styles.css" text="_" textFill="#484848">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="14.0" layoutY="7.0" prefHeight="25.0" prefWidth="62.0" text="Calculator" textFill="#484848">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="18.0" layoutY="14.0" prefHeight="150.0" prefWidth="265.0" styleClass="result" stylesheets="@styles.css">
+               <effect>
+                  <InnerShadow height="25.83" offsetX="2.0" offsetY="2.0" radius="11.7925" width="23.34">
+                     <input>
+                        <InnerShadow choke="0.09" height="10.190000000000001" offsetX="-5.0" offsetY="-5.0" radius="4.960000000000001" width="11.65">
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                           </color>
+                        </InnerShadow>
+                     </input>
+                     <color>
+                        <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Pane>
+            <GridPane layoutX="12.0" layoutY="177.0" prefHeight="224.0" prefWidth="276.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane prefHeight="60.0" prefWidth="60.0" styleClass="mybutton" stylesheets="@styles.css">
+                     <effect>
+                        <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                           <input>
+                              <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                                 <color>
+                                    <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                                 </color>
+                              </DropShadow>
+                           </input>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="60.0" styleClass="mybutton" stylesheets="@styles.css" GridPane.columnIndex="3">
+                     <effect>
+                        <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                           <input>
+                              <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                                 <color>
+                                    <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                                 </color>
+                              </DropShadow>
+                           </input>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="60.0" styleClass="mybutton" stylesheets="@styles.css" GridPane.columnIndex="2">
+                     <effect>
+                        <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                           <input>
+                              <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                                 <color>
+                                    <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                                 </color>
+                              </DropShadow>
+                           </input>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="60.0" styleClass="mybutton" stylesheets="@styles.css" GridPane.columnIndex="1">
+                     <effect>
+                        <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                           <input>
+                              <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                                 <color>
+                                    <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                                 </color>
+                              </DropShadow>
+                           </input>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane prefHeight="60.0" prefWidth="60.0" styleClass="mybutton" stylesheets="@styles.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <effect>
+                        <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                           <input>
+                              <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                                 <color>
+                                    <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                                 </color>
+                              </DropShadow>
+                           </input>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane prefHeight="60.0" prefWidth="60.0" styleClass="mybutton" stylesheets="@styles.css" GridPane.rowIndex="2">
+                     <effect>
+                        <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                           <input>
+                              <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                                 <color>
+                                    <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                                 </color>
+                              </DropShadow>
+                           </input>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane prefHeight="60.0" prefWidth="60.0" styleClass="mybutton" stylesheets="@styles.css" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <effect>
+                        <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                           <input>
+                              <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                                 <color>
+                                    <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                                 </color>
+                              </DropShadow>
+                           </input>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane prefHeight="60.0" prefWidth="60.0" styleClass="mybutton" stylesheets="@styles.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <effect>
+                        <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                           <input>
+                              <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                                 <color>
+                                    <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                                 </color>
+                              </DropShadow>
+                           </input>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane prefHeight="60.0" prefWidth="60.0" styleClass="mybutton" stylesheets="@styles.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <effect>
+                        <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                           <input>
+                              <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                                 <color>
+                                    <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                                 </color>
+                              </DropShadow>
+                           </input>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane prefHeight="60.0" prefWidth="74.0" styleClass="mybutton" stylesheets="@styles.css" GridPane.rowIndex="1">
+                     <effect>
+                        <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                           <input>
+                              <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                                 <color>
+                                    <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                                 </color>
+                              </DropShadow>
+                           </input>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane prefHeight="60.0" prefWidth="60.0" styleClass="mybutton" stylesheets="@styles.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <effect>
+                        <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                           <input>
+                              <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                                 <color>
+                                    <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                                 </color>
+                              </DropShadow>
+                           </input>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </GridPane.margin>
+                  </Pane>
+                  <Pane prefHeight="60.0" prefWidth="60.0" styleClass="mybutton" stylesheets="@styles.css" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <effect>
+                        <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                           <input>
+                              <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                                 <color>
+                                    <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                                 </color>
+                              </DropShadow>
+                           </input>
+                           <color>
+                              <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </GridPane.margin>
+                  </Pane>
+               </children>
+            </GridPane>
+            <Pane layoutX="18.0" layoutY="405.0" prefHeight="66.0" prefWidth="127.0" stylesheets="@styles.css">
+               <effect>
+                  <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                     <input>
+                        <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                           <color>
+                              <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                           </color>
+                        </DropShadow>
+                     </input>
+                     <color>
+                        <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="mybutton" />
+                  <String fx:value="zero" />
+               </styleClass>
+            </Pane>
+            <Pane layoutX="154.0" layoutY="404.0" prefHeight="66.4" prefWidth="61.6" styleClass="mybutton" stylesheets="@styles.css">
+               <effect>
+                  <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                     <input>
+                        <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                           <color>
+                              <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                           </color>
+                        </DropShadow>
+                     </input>
+                     <color>
+                        <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </Pane>
+            <Pane layoutX="224.0" layoutY="403.0" prefHeight="66.4" prefWidth="61.6" styleClass="mybutton" stylesheets="@styles.css">
+               <effect>
+                  <InnerShadow choke="0.17" height="30.08" offsetX="3.0" offsetY="3.0" radius="16.9625" width="39.77">
+                     <input>
+                        <DropShadow height="24.85" offsetX="2.0" offsetY="1.0" radius="12.145" width="25.73">
+                           <color>
+                              <Color red="0.729411780834198" green="0.7450980544090271" blue="0.800000011920929" />
+                           </color>
+                        </DropShadow>
+                     </input>
+                     <color>
+                        <Color red="0.9368420839309692" green="0.9368420839309692" blue="0.9368420839309692" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Pane>
+         </children></Pane>
+   </children>
+</AnchorPane>

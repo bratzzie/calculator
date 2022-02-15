@@ -1,0 +1,23 @@
+
+.root {
+    -fx-background-color: #dde1e7;
+    -fx-background-radius: 1em;
+
+}
+.container {
+    -fx-background-color: #dde1e7;
+    -fx-background-radius: .5em;
+}
+
+.result {
+    -fx-background-color: #dde1e7;
+}
+
+.mybutton {
+    -fx-background-color: #dde1e7;
+    -fx-cursor: hand;
+    -fx-background-radius: 50%;
+}
+.zero{
+    -fx-background-radius: 10px;
+}
