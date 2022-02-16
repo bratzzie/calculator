@@ -52,7 +52,7 @@ public class MainWindowController {
             operatorInMathView = ".";
         }
         else if(operator.equals("MC") || operator.equals("AC")) {
-            resultOutput.setText(String.valueOf(0));
+            resultOutput.setText(String.valueOf(0.0));
             operatorInMathView = ".";
         }
         else {
@@ -64,7 +64,7 @@ public class MainWindowController {
                 case "Mod" -> operatorInMathView = "%";
             }
             num1 = Double.parseDouble(resultOutput.getText());
-            resultOutput.setText(String.valueOf(0));
+            resultOutput.setText(String.valueOf(0.0));
         }
     }
 }
