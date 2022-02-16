@@ -18,6 +18,13 @@
     -fx-cursor: hand;
     -fx-background-radius: 50%;
 }
+.mybutton:hover {
+    -fx-background-color:#d0d4d9;
+}
 .zero{
     -fx-background-radius: 10px;
+}
+
+.buttonText:hover {
+    -fx-text-fill: #3498db;
 }
